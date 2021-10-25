@@ -1,0 +1,8 @@
+.DS_STORE
+**/rancher/*cache*
+**/rancher/*.cache
+**/tests
+**.egg-info
+build.sh
+dist
+build
