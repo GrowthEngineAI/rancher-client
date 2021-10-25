@@ -47,13 +47,14 @@ Below are the currently supported Environment Variables
 ## Using API
 
 ```python
-
-import rancher
 from rancher import RancherClient
 
 client = RancherClient(url='https://localhost:8443/v3',
                         access_key='<some valid access key>',
                         secret_key='<some valid secret key>')
+
+# Alternatively if Env Variables are set, can be called implicitly
+# client = RancherClient()
 
 # curl -s https://localhost:8443/v3/users?me=true
 client.list_user(me='true')
