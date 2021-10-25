@@ -21,25 +21,27 @@ pip install git+https://github.com/growthengineai/rancher-client.git@main
 
 Below are the currently supported Environment Variables
 
-One of the following sets:
+- `RANCHER` Prefix
+    - `RANCHER_URL`: str = ""
+    - `RANCHER_ACCESS_KEY`: str = ""
+    - `RANCHER_SECRET_KEY`: str = ""
+    - `RANCHER_TOKEN`: str = None
 
-- `RANCHER_URL`: str = ""
-- `RANCHER_ACCESS_KEY`: str = ""
-- `RANCHER_SECRET_KEY`: str = ""
-- `RANCHER_TOKEN`: str = None
+- `CATTLE` Prefix
+    - `CATTLE_URL`: str = ""
+    - `CATTLE_ACCESS_KEY`: str = ""
+    - `CATTLE_SECRET_KEY`: str = ""
+    - `CATTLE_TOKEN`: str = None
 
-- `CATTLE_URL`: str = ""
-- `CATTLE_ACCESS_KEY`: str = ""
-- `CATTLE_SECRET_KEY`: str = ""
-- `CATTLE_TOKEN`: str = None
+- `HTTPX` Variables
+    - `HTTPX_TIMEOUT`: float = 15.0
+    - `HTTPX_KEEPALIVE`: int = 50
+    - `HTTPX_MAXCONNECT`: int = 200
 
-- `HTTPX_TIMEOUT`: float = 15.0
-- `HTTPX_KEEPALIVE`: int = 50
-- `HTTPX_MAXCONNECT`: int = 200
-
-- `SSL_VERIFY`: bool = True
-- `RANCHER_LOG_LEVEL`: str = "info"
-- `RANCHER_CACHE_DIR`: str = `~/rancher-client/rancher/.cache`
+- Misc Variables
+    - `SSL_VERIFY`: bool = True
+    - `RANCHER_LOG_LEVEL`: str = "info"
+    - `RANCHER_CACHE_DIR`: str = `~/rancher-client/rancher/.cache`
 
 
 ## Using API
